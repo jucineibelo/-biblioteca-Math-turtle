@@ -1,19 +1,17 @@
-'''
-1. Construa um programa que receba como entrada a altura e o sexo de uma
-pessoa (letra F para Feminino e letra M para Masculino) Em seguida
-calcule e escreva o peso ideal dessa pessoa, utilizando as seguintes
-fórmulas
- para homens:(72.7 * altura) - 58;
- para mulheres:(62.1 * altura) - 44.7;
-'''
+"""
+1. Faça um programa em Python que solicite ao usuário três valores inteiros. Após
+isso calcule a raiz quadrada do primeiro valor elevado a potência do segundo
+valor, elevado a potência do terceiro valor. Utilize variáveis do tipo float. Veja o
+exemplo: ((2
+"""
 
-sexo = input("Insira letra F para Feminino e letra M para Masculino: ")
-altura = float(input("Digite a altura? "))
+n1 = float(input("Digite o primeiro valor: "))
+n2 = float(input("Digite o segundo valor: "))
+n3 = float(input("Digite o terceiro valor: "))
 
-if sexo == "F":
-    print("Seu peso ideal é: ",(62.1 * altura) - 44.7,2)
-elif sexo == "M":
-    print("Seu peso ideal é: ",(72.7 * altura) - 58)
-
-
+import math
+potencia = math.pow(n1,n2)
+potencia = math.pow(potencia,n3)
+resultado = math.sqrt(potencia)
+print(resultado)
 
